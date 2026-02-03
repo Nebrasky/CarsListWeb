@@ -7,10 +7,12 @@ namespace CarsListWeb.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly AppSettings _appSettings;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, AppSettings appSettings)
     {
         _logger = logger;
+        _appSettings = appSettings;
     }
 
     public IActionResult Index()

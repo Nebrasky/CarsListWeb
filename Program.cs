@@ -1,7 +1,12 @@
+using CarsListWeb.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+var appSettings = builder.Configuration.GetSection("AppSettings").Get<AppSettings>() ?? new AppSettings();
+builder.Services.AddSingleton(appSettings);
 
 var app = builder.Build();
 

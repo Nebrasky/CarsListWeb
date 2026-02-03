@@ -1,7 +1,7 @@
-﻿# CarsList (MAUI .NET 8, Windows-only) — Codex starter file
+﻿# CarsListWeb (ASP.NET MVC Core 8.0) — Codex starter file
 
 ## What we build
-Create a desktop app called **CarsList** using **.NET 8 MAUI**, **Windows only**.  
+Create a web app called **CarsListWeb** using **ASP.NET MVC Core 8**.  
 The app displays a list of cars (Model, Year, MinPrice, MaxPrice) loaded from a packaged JSON file inside the project.
 
 ## Example data
